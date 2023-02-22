@@ -1,0 +1,100 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+th {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+  
+td {
+    background-color: #eee;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+  
+tr:nth-child(odd) td {
+    background-color: #fcfcfc;
+}
+
+.emp-list {
+   align-items: center;
+   margin: 0 auto;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+.file-upload .hidden {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+  
+.file-upload .file-label {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.file-upload .file-label:hover {
+    background-color: #444;
+}
+  
+.file-upload .submit-button {
+    background-color: #24aad3;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+  
+.file-upload .submit-button:hover {
+    background-color: #158fb4;
+}
+  
+.status {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    justify-content: center;
+    margin-top: 1rem;
+}
+  
+.status #status-text {
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+.status.success #status-text {
+    background-color: #b0eeb2;
+    color: #000000;
+}
+  
+.status.error #status-text {
+    background-color: #e78d87;
+    color: #fff;
+}
