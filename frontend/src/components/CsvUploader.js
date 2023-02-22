@@ -40,6 +40,7 @@ function CsvUploader({onUploadSuccess}) {
             setUploadError(error.message);
         });
         setSelectedFile(null);
+        document.getElementById("file-input").value = null;
     };
 
     const renderUploadStatus = () => {

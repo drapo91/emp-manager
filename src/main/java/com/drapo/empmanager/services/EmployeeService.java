@@ -42,8 +42,7 @@ public class EmployeeService {
             throw new CsvUploadException(String.format("Error when parsing csv file. Reason: %s", e.getMessage()));
         } catch (DataIntegrityViolationException e) {
             LOGGER.error("Error when saving employee entities to database");
-            throw new CsvUploadException("There was problem when saving employees to database. Make sure that emails " +
-                    "are unique for each employee and that file was not uploaded before");
+            throw new CsvUploadException("Error when saving data to database. Make sure that imported data is unique.");
         } catch (Exception e) {
             LOGGER.error("Error when parsing csv file");
             throw new CsvUploadException(String.format("Error when parsing csv file. Reason %s", e.getMessage()));
